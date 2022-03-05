@@ -5,3 +5,13 @@ Developed in <b>1990</b>, Python is one of the most popular <i>general-purpose</
 
 The term “general-purpose” simply means that Python can be used for a variety of applications and does not focus on any one aspect of programming. 
 </p> <br>
+
+To display data/information
+
+print (data)
+
+
+Use case:
+	To display strings(group of characters enclosed in single or double quotes) <br/>
+print('Hello World') // Hello World
+print("Hello World") // Hello World
