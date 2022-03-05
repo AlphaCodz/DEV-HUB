@@ -1,0 +1,7 @@
+<h2 text-align="center">Hisses</h2>
+<p>
+Developed in <b>1990</b>, Python is one of the most popular <i>general-purpose</i> programming languages in modern times.
+
+
+The term “general-purpose” simply means that Python can be used for a variety of applications and does not focus on any one aspect of programming. 
+</p> <br>
