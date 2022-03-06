@@ -1,11 +1,11 @@
-""" 
+"""" "" "" "" "" "" "" "" "" "" "" "" 
 Hisses
 
 Developed in 1990, Python is one of the most popular general-purpose programming languages in modern times.
 
 
 The term “general-purpose” simply means that Python can be used for a variety of applications and does not focus on any one aspect of programming. 
-"""
+""""" "" "" "" "" "" "" "" "" "" "" ""
 
 	#To display Strings (group of characters enclosed in single or double quotes) 
 print('Hello World') // Hello World
@@ -17,7 +17,7 @@ print(1000) // 1000
 print(3.142) // 3.142
 
 	To display multiple data
-print(50, 1000, 3.142, "Hello World", 'hello') # 50, 1000, 3.142, Hello World, hello 
+print(50, 1000, 3.142, "Hello World", 'hello') // 50, 1000, 3.142, Hello World, hello 
 
 #By default Python prints 'print'  statements on new lines hence to join these 'print'  statements use the 'end'  attribute with whatever value you wish.
 Use case:
