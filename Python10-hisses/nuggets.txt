@@ -50,10 +50,24 @@ Use triple quotes
 
 """
 
-	Python has three data types:
+	Python has three main data types:
 	
 Numbers (2, 3.142, 1000)
 
 Strings ("Hello", 'Dev hub', "Dev hub") 
 
 Booleans (true, false) 
+
+	<h4>	Variables  </h4>
+	Variables are mutable. Hence, the value of a variable can always be updated or replaced.
+	
+Naming convention:
+
+<em>Numbers</em> must not begin a variable name but can appear anywhere else: For example, 12income✖️ is not a valid name but income12✔️ or in12come✔️ are valid.
+
+<em>Case sensitivity</em>: For example, Income and income are two different variables and not one.
+You can define your income variable as Income or income, both are valid.
+
+<em>Underscores can appear anywhere</em>: For example, _income or income_ are valid name, monthly_income is a valid name.
+
+<em>Variables must give meaningful information</em>: For example, inc or even income would not give any useful information but names like weekly_income, monthly_income, or annual_income explain the purpose of our defined variable. 
