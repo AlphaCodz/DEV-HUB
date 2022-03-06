@@ -12,6 +12,40 @@ print (data)
 
 
 Use case:
-	To display strings(group of characters enclosed in single or double quotes) <br/>
+	To display <strong>Strings</strong>(group of characters enclosed in single or double quotes) <br/>
 print('Hello World') // Hello World
 print("Hello World") // Hello World
+
+	To display <strong>Numbers</>
+print(50) // 50
+print(1000) // 1000
+print(3.142) // 3.142
+
+	To display multiple data
+print(50, 1000, 3.142, "Hello World", 'hello') // 50, 1000, 3.142, Hello World, hello 
+
+By default Python prints <code>print</code> statements on new lines hence to join these  <code>print</code> statements use the  <code>end</code> attribute with whatever value you wish.
+Use case:
+print("Hello, come",  end=" ")
+print("World") // Hello, come World
+
+print("Hello", end=" ")
+print("World") // Hello World
+
+print("Hello", end="") 
+print("World") // HelloWorld
+
+	To Comment using the  hash <code>#</code> for single-line and triple quotations <code>""" """</code> for multi-line
+Use case:
+print(50)  # This line prints 50
+print("Hello World")  # This line prints Hello World
+
+# This is just a comment hanging out on its own!
+
+# For multi-line comments, we must
+# add the hashtag symbol
+# each time or 
+"""
+Use triple quotes
+
+"""
