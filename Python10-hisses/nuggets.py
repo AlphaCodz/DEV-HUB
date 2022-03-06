@@ -1,4 +1,4 @@
-"""
+""" 
 Hisses
 
 Developed in 1990, Python is one of the most popular general-purpose programming languages in modern times.
@@ -7,7 +7,7 @@ Developed in 1990, Python is one of the most popular general-purpose programming
 The term “general-purpose” simply means that Python can be used for a variety of applications and does not focus on any one aspect of programming. 
 """
 
-	To display Strings (group of characters enclosed in single or double quotes) 
+	#To display Strings (group of characters enclosed in single or double quotes) 
 print('Hello World') // Hello World
 print("Hello World") // Hello World
 
@@ -19,7 +19,7 @@ print(3.142) // 3.142
 	To display multiple data
 print(50, 1000, 3.142, "Hello World", 'hello') # 50, 1000, 3.142, Hello World, hello 
 
-By default Python prints 'print'  statements on new lines hence to join these 'print'  statements use the 'end'  attribute with whatever value you wish.
+#By default Python prints 'print'  statements on new lines hence to join these 'print'  statements use the 'end'  attribute with whatever value you wish.
 Use case:
 print("Hello, come",  end=" ")
 print("World") // Hello, come World
@@ -30,20 +30,20 @@ print("World") // Hello World
 print("Hello", end="") 
 print("World") // HelloWorld
 
-	To Comment using the  hash (#)  for single-line and triple quotations """ """ for multi-line
+	To Comment using the  hash (#)  for single-line and multi-line comment.
+	 Do not use triple quotations """ """ for multi-line comments as if you put a comment in
+
+"""
+long comment here
+"""
+in the middle of a script, Python/linters won't recognize that. Folding will be messed up, as the above comment is not part of the standard recommendations. It's better to use
+
+# Long comment
+# here.
 Use case:
 print(50)  # This line prints 50
 print("Hello World")  # This line prints Hello World
 
-# This is just a comment hanging out on its own!
-
-# For multi-line comments, we must
-# add the hashtag symbol
-# each time or 
-"""
-Use triple quotes
-
-"""
 
 	Python has three main data types:
 	
