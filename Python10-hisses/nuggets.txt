@@ -49,3 +49,11 @@ print("Hello World")  # This line prints Hello World
 Use triple quotes
 
 """
+
+	Python has three data types:
+	
+Numbers (2, 3.142, 1000)
+
+Strings ("Hello", 'Dev hub', "Dev hub") 
+
+Booleans (true, false) 
