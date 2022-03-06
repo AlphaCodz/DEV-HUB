@@ -40,6 +40,10 @@ in the middle of a script, Python/linters won't recognize that. Folding will be 
 
 # Long comment
 # here.
+There is no such feature as a multi-line comment. # is the only way to comment a single line of code. Many of you answered ''' a comment ''' this as their solution.
+
+It seems to work, but internally ''' in Python takes the lines enclosed as a regular strings which the interpreter does not ignores like comment using #. Instead use PEP's (https://legacy.python.org/dev/peps/pep-0008/#block-comments) standard guidelines. 
+
 Use case:
 print(50)  # This line prints 50
 print("Hello World")  # This line prints Hello World
