@@ -41,18 +41,76 @@ in the middle of a script, Python/linters won't recognize that. Folding will be 
 
 # Long comment
 # here.
-There is no such feature as a multi-line comment. # is the only way to comment a single line of code. Many of you answered ''' a comment ''' this as their solution.
+There is no such feature as a multi-line comment. # is the only way to comment a single line of code. 
 
-It seems to work, but internally ''' in Python takes the lines enclosed as a regular strings which the interpreter does not ignores like comment using #. Instead use PEP's (https://legacy.python.org/dev/peps/pep-0008/#block-comments) standard guidelines. 
+Internally ''' in Python takes the lines enclosed as a regular strings which the interpreter does not ignores like comment using #. Instead use PEP's (https://legacy.python.org/dev/peps/pep-0008/#block-comments) standard guidelines. 
 
 Use case:
 print(50)  # This line prints 50
 print("Hello World")  # This line prints Hello World
 
 
-	##Python has three main data types:##
-	
+	##Python has three main data types: Numbers, Strings and Booleans## 
+- -	- - - - - - - - - - - - - - - - - 
 Numbers: (2, 3.142, 1000)
+	1,	Integers: The amount of memory an integer occupies depends on its value. For example, 0 will take up 24 bytes whereas 1 would occupy 28 bytes.
+
+Here are some examples of integers. 
+
+print(10)  # A positive integer
+
+print(-3000)  # A negative integer
+​
+num = 123456789  # Assigning an integer to a variable
+
+print(num) // 123456789
+
+num = -16000  # Assigning a new integer
+
+print(num) // -16000 
+"" "" "" "" "" "" "" "" "" 
+
+	2, Floats: A float occupies 24 bytes of memory.
+
+Below, we can find some examples of floats:
+
+print(1.00000000005)  # A positive float
+
+print(-85.6701)  # A negative float
+​
+flt_pt = 1.23456789
+
+print(flt_pt) // 1.23456789
+"" "" "" "" "" "" "" "" "" "" 
+		
+	3,   Complexes: Just like the print() statement is used to print values, complex() is used to create complex numbers.
+
+It requires two values. The first one will be the real part of the complex number, while the second value will be the imaginary part.
+
+Here’s the template for making a complex number:
+
+complex(real, imaginary)
+Let’s see a few examples:
+
+print(complex(10, 20))  # Represents the complex number (10 + 20j)
+
+print(complex(2.5, -18.2))  # Represents the complex number (2.5 - 18.2j)
+​
+complex_1 = complex(0, 2)
+
+complex_2 = complex(2, 0)
+
+print(complex_1) // 2j
+
+print(complex_2) // 2+0j
+
+Note: In normal mathematics, the imaginary part of a complex number is denoted by i. However, in the code above, it is denoted by j. This is because Python follows the electrical engineering convention which uses j instead of i. Don’t let that confuse you.
+
+Complex numbers are useful for modelling physics and electrical engineering models in Python. While they may not seem very relevant right now, it never hurts to know!
+
+A complex number usually takes up 32 bytes of memory.
+-------------------------------------
+
 
 Strings: ("Hello", 'Dev hub', "Dev hub") 
 
