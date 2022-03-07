@@ -51,6 +51,7 @@ print("Hello World")  # This line prints Hello World
 
 
 	##Python has three main data types: Numbers, Strings and Booleans## 
+	
 - -	- - - - - - - - - - - - - - - - - 
 Numbers: (2, 3.142, 1000)
 	1,	Integers: The amount of memory an integer occupies depends on its value. For example, 0 will take up 24 bytes whereas 1 would occupy 28 bytes.
@@ -68,6 +69,7 @@ print(num) // 123456789
 num = -16000  # Assigning a new integer
 
 print(num) // -16000 
+
 "" "" "" "" "" "" "" "" "" 
 
 	2, Floats: A float occupies 24 bytes of memory.
@@ -81,7 +83,8 @@ print(-85.6701)  # A negative float
 flt_pt = 1.23456789
 
 print(flt_pt) // 1.23456789
-"" "" "" "" "" "" "" "" "" "" 
+
+"" "" "" "" "" "" "" "" "" ""
 		
 	3,   Complexes: Just like the print() statement is used to print values, complex() is used to create complex numbers.
 
@@ -109,12 +112,128 @@ Note: In normal mathematics, the imaginary part of a complex number is denoted b
 Complex numbers are useful for modelling physics and electrical engineering models in Python. While they may not seem very relevant right now, it never hurts to know!
 
 A complex number usually takes up 32 bytes of memory.
+
 -------------------------------------
 
 
-Strings: ("Hello", 'Dev hub', "Dev hub") 
+Strings: ("Hello", 'Dev hub', "Dev hub", '''Hello''', "") 
+		A string is a collection of characters closed within single, double or triple quotation marks.
+
+A string can also contain a single character or be entirely empty.
+
+print("Harry Potter!")  # Double quotation marks
+
+got = 'Game of Thrones.'  # Single quotation marks
+
+print(got) // Game of Thrones 
+
+print("$")  # Single character
+​
+empty = ""
+
+print(empty)  # Just prints an empty line
+​
+multiple_lines = '''Triple quotes allows multi-line string.'''
+
+print(multiple_lines) // Triple quotes allows multi-line string
+
+A blank space inside the string quotation marks is also considered to be a character.
+To add a multi-line string we can use triple quotes.
+
+"" "" "" "" "" "" "" "" "" "" 
+##The Length of a String##
+The length of a string can be found using the len() built-in function. This length indicates the number of characters in the string:
+
+random_string = "I am Batman"  # 11 characters
+
+print(len(random_string)) // 11
+​
+"" "" "" "" "" "" "" "" "" "" "
+
+##Indexing##
+In a string, every character is given a numerical index based on its position.
+
+A string in Python is indexed from 0 to n-1 where n is its length. This means that the index of the first character in a string is 0.
+
+"" "" "" "" "" "" "" "" "" "" "" 
+
+##Accessing Characters##
+Each character in a string can be accessed using its index. The index must be closed within square brackets, [], and appended to the string.
+
+batman = "Bruce Wayne"
+​
+first = batman[0]  # Accessing the first character
+
+print(first) // B
+​
+space = batman[5]  # Accessing the empty space in the string
+
+print(space) // 
+
+last = batman[len(batman) - 1]
+
+print(last)
+
+# The following will produce an error since the index is out of bounds
+
+# err = batman[len(batman)]
+​
+If we try to execute the code we would get an error because the maximum index is len(batman) - 1. A higher value is not within the bounds of the string. Since len(batman) is larger than len(batman) - 1, it will produce an error.
+
+##Reverse Indexing##
+We can also change our indexing convention by using negative indices.
+
+Negative indices start from the opposite end of the string. Hence, the -1 index corresponds to the last character:
+
+batman = "Bruce Wayne"
+
+print(batman[-1])  # Corresponds to batman[10]
+
+print(batman[-5])  # Corresponds to batman[6]
+
+##String Immutability##
+Once we assign a value to a string, we can’t update it later. How about verifying it with an executable below?
+
+string = "Immutability"
+
+string[0] = 'O' # Will give error
+
+The above code gives TypeError because Python doesn’t support item assignment in case of strings.
+
+Remember, assigning a new value to string variable doesn’t mean that you’ve changed the value. Let’s verify it with the id() method below.
+
+str1 = "hello"
+
+print(id(str1))
+​
+4
+str1 = "bye"
+
+print(id(str1))
+
+Notice, when we assign a new value to str1 (at line 4) its identity changes not the value.
+
+##ASCII Versus Unicode##
+In Python 3.x, all strings are unicode. But, older versions of Python (Python 2.x) support only ASCII characters. To use unicode in Python 2.x, preceding the string with a u is must. For example:
+
+string = u"This is unicode"
+
+-------------------------------------
 
 Booleans: (true, false) 
+		The Boolean (also known as bool) data type allows us to choose between two values: true and false.
+
+In Python, we can simply use True or False to represent a bool:
+
+print(True) // True
+
+f_bool = False
+
+print(f_bool) // False
+
+Note: The first letter of a bool needs to be capitalized in Python. 
+
+-------------------------------------
 
 		##Variables##
 	Variables are mutable. Hence, the value of a variable can always be updated or replaced.
