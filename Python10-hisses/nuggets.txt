@@ -231,7 +231,25 @@ f_bool = False
 
 print(f_bool) // False
 
-Note: The first letter of a bool needs to be capitalized in Python. 
+Note: The first letter of a bool needs to be capitalized in Python.
+-------------------------------------
+
+##NoneType##
+	Python offers another data type called NoneType. It only has a single value, None. We can assign None to any variable, but we can not create other NoneType variables.
+
+Let’s look at an example below.
+
+val = None
+
+print(val) # prints "None" and returns None
+
+print (type(val)) # <class 'NoneType'>
+
+Important Points#
+None is not a default value for the variable that has not yet been assigned a value.
+None is not the same as False.
+None is not an empty string.
+None is not 0. 
 
 -------------------------------------
 
