@@ -43,7 +43,7 @@ in the middle of a script, Python/linters won't recognize that. Folding will be 
 # here.
 There is no such feature as a multi-line comment. # is the only way to comment a single line of code. 
 
-Internally ''' in Python takes the lines enclosed as a regular strings which the interpreter does not ignores like comment using #. Instead use PEP's (https://legacy.python.org/dev/peps/pep-0008/#block-comments) standard guidelines. 
+Internally ''' in Python takes the lines enclosed regular strings which the interpreter does not ignores like comment using #. Instead use PEP's (https://legacy.python.org/dev/peps/pep-0008/#block-comments) standard guidelines. 
 
 Use case:
 print(50)  # This line prints 50
@@ -140,7 +140,7 @@ print(multiple_lines) // Triple quotes allows multi-line string
 A blank space inside the string quotation marks is also considered to be a character.
 To add a multi-line string we can use triple quotes.
 
-"" "" "" "" "" "" "" "" "" "" 
+
 ##The Length of a String##
 The length of a string can be found using the len() built-in function. This length indicates the number of characters in the string:
 
@@ -148,14 +148,14 @@ random_string = "I am Batman"  # 11 characters
 
 print(len(random_string)) // 11
 ​
-"" "" "" "" "" "" "" "" "" "" "
+
 
 ##Indexing##
 In a string, every character is given a numerical index based on its position.
 
 A string in Python is indexed from 0 to n-1 where n is its length. This means that the index of the first character in a string is 0.
 
-"" "" "" "" "" "" "" "" "" "" "" 
+
 
 ##Accessing Characters##
 Each character in a string can be accessed using its index. The index must be closed within square brackets, [], and appended to the string.
@@ -172,7 +172,7 @@ print(space) //
 
 last = batman[len(batman) - 1]
 
-print(last)
+print(last) // e
 
 # The following will produce an error since the index is out of bounds
 
