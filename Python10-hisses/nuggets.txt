@@ -409,3 +409,36 @@ The %i is the format specifier, which tells Python to insert the integers here.
  to two decimal places? We can use %.2f (line 4).
 
 If we pass a float that’s greater than two decimal places, then %.2f will round off the number (line 7).
+
+
+##Operators##
+
+Operators are represented by characters or special keywords. In general, Python’s operators follow the in-fix or prefix notations.
+
+In-fix operators appear between two operands (values on which the operator acts) and hence, are usually known as binary operators:
+
+A prefix operator usually works on one operand and appears before it. Hence, prefix operators are known as unary operators:
+
+The 5 main operator types in Python are:
+
+- arithmetic operators
+
+- comparison operators
+
+- assignment operators
+
+- logical operators
+
+- bitwise operators
+
+
+Below, we can find the basic arithmetic operators in order of precedence. The operator listed higher will be computed first.
+
+These operators allow us to perform arithmetic operations in Python.
+
+Operator    | Purpose     				       | Notation
+
+()          | Parentheses 				       | Encapsulates the Precedent Operation
+**          | Exponent                                         | In-fix
+%, *, /, // | Modulo, Multiplication, Division, Floor Division | In-fix
++, -        | Addition, Subtraction 			       | In-fix
