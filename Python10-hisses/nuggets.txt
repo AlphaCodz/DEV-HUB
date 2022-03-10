@@ -341,18 +341,18 @@ If end is not provided, the substring will begin from the start index and go all
 Let’s see this in action:
 
 
-my_string = "This is MY string!"
-
-print(my_string[:8])  # All the characters before 'M'
+1 my_string = "This is MY string!"
+2 
+3 print(my_string[:8])  # All the characters before 'M'
 Output: // This is
-
-print(my_string[8:])  # All the characters starting from 'M'
+4 
+5 print(my_string[8:])  # All the characters starting from 'M'
 Output: // MY string! 
-
-print(my_string[:])  # The whole string
+6 
+7 print(my_string[:])  # The whole string
 Output: // This is MY string!
-
-print(my_string[::-1])  # The whole string in reverse (step is -1)
+8 
+9 print(my_string[::-1])  # The whole string in reverse (step is -1)
 Output: // !gnirts YM si sihT 
 ​
 That’s pretty much all we need to know about string slicing. Play around with the strings above to get a better understanding of how slicing works.
@@ -369,15 +369,15 @@ Examples;
 
 - Inserting Strings Within a String
 
-string1 = "I like %s" % "Python"
-print(string1) // I like Python
-
-temp = "Educative"
-string2 = "I like %s" % temp
-print(string2) // 'I like Educative'
-
-string3 = "I like %s and %s" % ("Python", temp)
-print(string3) // 'I like Python and Educative'
+1 string1 = "I like %s" % "Python"
+2 print(string1) // I like Python
+3 
+4 temp = "Educative"
+5 string2 = "I like %s" % temp
+6 print(string2) // 'I like Educative'
+7 
+8 string3 = "I like %s and %s" % ("Python", temp)
+9 print(string3) // 'I like Python and Educative'
 
 The '%s' is the format specifier, which tells Python to insert the text here. Python will insert a string if:
 
@@ -387,19 +387,25 @@ We follow the string with a % and another string type variable.
 
 - Inserting Integers Within a String
 
-my_string = "%i + %i = %i" % (1,2,3)
-print(my_string) // '1 + 2 = 3'
+1 my_string = "%i + %i = %i" % (1,2,3)
+2 print(my_string) // '1 + 2 = 3'
 
 The %i is the format specifier, which tells Python to insert the integers here.
 
 
 - Inserting Floats Within a String
 
-string1 = "%f" % (1.11)
-print(string1) // 1.110000
+1 string1 = "%f" % (1.11)
+2 print(string1) // 1.110000
+3 
+4 string2 = "%.2f" % (1.11)
+5 print(string2) // 1.11
+6 
+7 string3 = "%.2f" % (1.117)
+8 print(string3) // 1.12
 
-string2 = "%.2f" % (1.11)
-print(string2) // 1.11
+%f is used to substitute floats within a string. Note, string1 includes extra zeroes. How about limiting 1.11
+1.11
+ to two decimal places? We can use %.2f (line 4).
 
-string3 = "%.2f" % (1.117)
-print(string3) // 1.12
+If we pass a float that’s greater than two decimal places, then %.2f will round off the number (line 7).
