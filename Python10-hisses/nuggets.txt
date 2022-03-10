@@ -388,4 +388,18 @@ We follow the string with a % and another string type variable.
 - Inserting Integers Within a String
 
 my_string = "%i + %i = %i" % (1,2,3)
-print(my_string) # '1 + 2 = 3'
+print(my_string) // '1 + 2 = 3'
+
+The %i is the format specifier, which tells Python to insert the integers here.
+
+
+- Inserting Floats Within a String
+
+string1 = "%f" % (1.11)
+print(string1) // 1.110000
+
+string2 = "%.2f" % (1.11)
+print(string2) // 1.11
+
+string3 = "%.2f" % (1.117)
+print(string3) // 1.12
