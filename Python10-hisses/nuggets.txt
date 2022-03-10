@@ -356,3 +356,36 @@ print(my_string[::-1])  # The whole string in reverse (step is -1)
 Output: // !gnirts YM si sihT 
 ​
 That’s pretty much all we need to know about string slicing. Play around with the strings above to get a better understanding of how slicing works.
+
+
+##String formatting## 
+Basically substituting values into a string. Following are some use cases of string formatting:
+
+- Inserting strings within a string
+- Inserting integers within a string
+- Inserting floats within a string
+
+Examples;
+
+- Inserting Strings Within a String
+
+string1 = "I like %s" % "Python"
+print(string1) // I like Python
+
+temp = "Educative"
+string2 = "I like %s" % temp
+print(string2) // 'I like Educative'
+
+string3 = "I like %s and %s" % ("Python", temp)
+print(string3) // 'I like Python and Educative'
+
+The '%s' is the format specifier, which tells Python to insert the text here. Python will insert a string if:
+
+We follow the string with a % and another string.
+We follow the string with a % and another string type variable.
+
+
+- Inserting Integers Within a String
+
+my_string = "%i + %i = %i" % (1,2,3)
+print(my_string) # '1 + 2 = 3'
