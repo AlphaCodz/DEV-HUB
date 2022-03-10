@@ -180,6 +180,7 @@ print(last) // e
 ​
 If we try to execute the code we would get an error because the maximum index is len(batman) - 1. A higher value is not within the bounds of the string. Since len(batman) is larger than len(batman) - 1, it will produce an error.
 
+
 ##Reverse Indexing##
 We can also change our indexing convention by using negative indices.
 
@@ -190,6 +191,8 @@ batman = "Bruce Wayne"
 print(batman[-1])  # Corresponds to batman[10]
 
 print(batman[-5])  # Corresponds to batman[6]
+
+
 
 ##String Immutability##
 Once we assign a value to a string, we can’t update it later. How about verifying it with an executable below?
@@ -213,6 +216,8 @@ print(id(str1))
 
 Notice, when we assign a new value to str1 (at line 4) its identity changes not the value.
 
+
+
 ##ASCII Versus Unicode##
 In Python 3.x, all strings are unicode. But, older versions of Python (Python 2.x) support only ASCII characters. To use unicode in Python 2.x, preceding the string with a u is must. For example:
 
@@ -220,7 +225,7 @@ string = u"This is unicode"
 
 -------------------------------------
 
-Booleans: (true, false) 
+##Booleans: (true, false) 
 		The Boolean (also known as bool) data type allows us to choose between two values: true and false.
 
 In Python, we can simply use True or False to represent a bool:
@@ -289,6 +294,7 @@ print(my_string[8:len(my_string)]) # From the 8th index till the end
 Output: // My string! 
 ​
 
+
 ##Slicing with a Step##
 Python 3 also allows us to slice a string by defining a step through which we can skip characters in the string. The default step is 1, so we iterate through the string one character at a time.
 
@@ -309,6 +315,7 @@ Output: // Ti s
 print(my_string[0:7:5])  # A step of 5
 Output: // Ti
 
+
 ##Reverse Slicing##
 Strings can also be sliced to return a reversed substring. In this case, we would need to switch the order of the start and end indices.
 
@@ -321,6 +328,8 @@ Output: // rts YM si s
 
 print(my_string[17:0:-2]) # Take 2 steps back.
 Output: ​// !nrsY ish
+
+
 
 Partial Slicing #
 One thing to note is that specifying the start and end indices is optional.
