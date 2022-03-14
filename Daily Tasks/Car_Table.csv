@@ -1,0 +1,6 @@
+name," type"," color"," price"," quantity"
+'Toyota'," 'Coaster_Bus'"," 'White'"," 200000"," 1"
+'Volkswagen'," 'Transport_Bus'"," 'Yellow'"," 50000"," 1"
+'Nissan'," 'SUV'"," 'Blue'"," 300000"," 2"
+'Mitsubishi'," 'Jeep'"," 'Green'"," 100000"," 3"
+'Innoson'," 'SUV'"," 'Red'"," 500000"," 3"
