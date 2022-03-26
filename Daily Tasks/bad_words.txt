@@ -1,0 +1,2 @@
+bad_words = ['fuck', 'Mad', 'Motherfucker', 'bastard', 'fool', 'imbecile', 'goat', 'die', 'kill']
+bad_words.upper()

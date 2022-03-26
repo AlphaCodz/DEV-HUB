@@ -1,3 +1,4 @@
+import random
 # Banking System: That Allows creation of account, depositing and withdrawal of funds
 name = input("What is your name? ")
 
@@ -24,6 +25,7 @@ Nationality = input("Nationality: ")
 
 print(" Account Successfully Created!\
     Thank You for choosing Assurance Bank! ")
+
 
 
 
@@ -56,15 +58,29 @@ class Bank:
     def Withdraw(self):
         Bank.Initial_Account_Balance = float(Bank.fund) - float(Bank.withdraw)  
         return f"Dear Esteemed Customer, you have N{Bank.Initial_Account_Balance} left. Thanks for Banking with us!"
-            
+    
+
+    # def random_int(self):
+    #     count = 0
+    #     while count < 10:
+    #         self.answer += str(random.randint(0, 9))
+    #         count += 1
+    #     return f"Your Account Number is {self.answer}"
+    # print(random_int(answer))
+                    
        
    
 User1 = Bank(name, age, LGA, State_of_origin, State_of_Residence, address, Nationality, Bank.fund, Bank.withdraw )
 
 
 # print(User1.Deposit())
+
+
 Bank.Initial_Account_Balance = 0.0
+# print(User1.random_int())
 print(User1.Withdraw())
+
+# print(User1.Generate_Account_Number())
 
 
           

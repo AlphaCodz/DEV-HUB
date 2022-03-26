@@ -17,7 +17,7 @@ if len(name) < 3:
     print("Name Must be at least 3 characters")
     
 elif len(name) > 50:
-    print("Name must be a Maximum of 50 Characters")
+    print("Name must at least 4 characters")
     
 else:
     print("Name Look's Good!")

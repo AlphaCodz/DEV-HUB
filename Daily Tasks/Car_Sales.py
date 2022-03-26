@@ -1,4 +1,3 @@
-import csv
 class Car:
     pay_rate = 0.8 #Pay rate after 20% discount
     all = []
@@ -33,14 +32,14 @@ class Car:
 # for instance in Car.all:
 #     print(instance.type)
 
-car1 = Car("Toyota", "SUV", "Cyan", 100, 1)
-car1.apply_discount()
-print(car1.Calculate_Amount())
+# car1 = Car("Toyota", "SUV", "Cyan", 100, 1)
+# car1.apply_discount()
+# print(car1.Calculate_Amount())
 
-# Engine = Car("TYPE2345", "Engine", "Black", 1000, 3)
-# Engine.pay_rate = 0.07
-# Engine.apply_discount()
-# print(Engine.price)
+Engine = Car("TYPE2345", "Engine", "Black", 1000, 3)
+Engine.pay_rate = 0.07
+Engine.apply_discount()
+print(Engine.Calculate_Amount())
 
 # print(Car.__dict__) #All attribute for class level
 # print(Engine.__dict__) #All attribute for instance level

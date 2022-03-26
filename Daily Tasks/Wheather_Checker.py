@@ -5,7 +5,7 @@
 #Otherwise it's neither Hot nor Cold
 
 # HOW TO USE: CHANGE TEMPERATURE DEGREE FIGURE AND RUN
-Temperature = 30 
+Temperature = 300 
 
 if Temperature >= 30:
     print("Its a Hot day")

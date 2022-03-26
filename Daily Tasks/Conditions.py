@@ -6,7 +6,7 @@
 
 
 Has_High_Income = True
-Has_Good_Credit = True
+Has_Good_Credit = False
 
 if Has_High_Income and Has_Good_Credit:
     print("Eligible For Loan")
