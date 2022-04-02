@@ -5,22 +5,23 @@ Developed in 1990, Python is one of the most popular general-purpose programming
 
 
 The term “general-purpose” simply means that Python can be used for a variety of applications and does not focus on any one aspect of programming. 
-""""" "" "" "" "" "" "" "" "" "" "" ""
+""""" "" "" "" "" "" "" "" "" "" "" ""	
+	##Strings
+print('Hello World') // Hello World //strings
+print("Hello World") // Hello World //strings
 
-	##To display Strings (group of characters enclosed in single or double quotes)##
-print('Hello World') // Hello World
-print("Hello World") // Hello World
 
-	##To display Numbers##
-print(50) // 50
-print(1000) // 1000
-print(3.142) // 3.142
+	##To print multiple numbers
+print(50) // 50 // positive integer
+print(-1000) // 1000 // -integer
+print(3.142) // 3.142 // float
 
-	##To display multiple data##
+	##Multiple data
 print(50, 1000, 3.142, "Hello World", 'hello') // 50, 1000, 3.142, Hello World, hello 
 
-##By default Python prints 'print'  statements on new lines hence to join these 'print'  statements use the 'end'  attribute with whatever value you wish.##
-Use case:
+
+	##To print on same line
+
 print("Hello, come",  end=" ")
 print("World") // Hello, come World
 
@@ -30,24 +31,12 @@ print("World") // Hello World
 print("Hello", end="") 
 print("World") // HelloWorld
 
+
 	##Commenting
-	To Comment, use the  hash (#)  for single-line and multi-line comment.
-	 Do not use triple quotations """ """ for multi-line comments as if you put a comment in
-
-"""
-long comment here
-"""
-in the middle of a script, Python/linters won't recognize that. Folding will be messed up, as the above comment is not part of the standard recommendations. It's better to use
-
-# Long comment
-# here.
-There is no such feature as a multi-line comment. # is the only way to comment a single line of code. 
-
-Internally ''' in Python takes the lines enclosed regular strings which the interpreter does not ignores like comment using #. Instead use PEP's (https://legacy.python.org/dev/peps/pep-0008/#block-comments) standard guidelines. 
-
 Use case:
 print(50)  # This line prints 50
 print("Hello World")  # This line prints Hello World
+
 
 
 	##Python has three main data types: Numbers, Strings and Booleans## 
@@ -272,7 +261,9 @@ Underscores can appear anywhere: For example, _income or income_ are valid name,
 
 Variables must give meaningful information: For example, inc or even income would not give any useful information but names like weekly_income, monthly_income, or annual_income explain the purpose of our defined variable. 
 
-##Slicing##: is the process of obtaining a portion (substring) of a string by using its indices.
+
+
+	##Slicing##: is the process of obtaining a portion (substring) of a string by using its indices.
 
 Given a string, we can use the following template to slice it and obtain a substring:
 
@@ -295,7 +286,7 @@ Output: // My string!
 ​
 
 
-##Slicing with a Step##
+	##Slicing with a Step##
 Python 3 also allows us to slice a string by defining a step through which we can skip characters in the string. The default step is 1, so we iterate through the string one character at a time.
 
 The step is defined after the end index:
@@ -316,7 +307,7 @@ print(my_string[0:7:5])  # A step of 5
 Output: // Ti
 
 
-##Reverse Slicing##
+	##Reverse Slicing##
 Strings can also be sliced to return a reversed substring. In this case, we would need to switch the order of the start and end indices.
 
 A negative step must also be provided:
@@ -331,7 +322,7 @@ Output: ​// !nrsY ish
 
 
 
-Partial Slicing #
+	##Partial Slicing
 One thing to note is that specifying the start and end indices is optional.
 
 If start is not provided, the substring will have all the characters until the end index.
