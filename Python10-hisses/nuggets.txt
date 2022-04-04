@@ -250,7 +250,7 @@ None is not 0.
 		##Variables##
 	Variables are mutable. Hence, the value of a variable can always be updated or replaced.
 	
-Naming convention:
+Standard Naming convention:
 
 Numbers must not begin a variable name but can appear anywhere else: For example, 12income✖️ is not a valid name but income12✔️ or in12come✔️ are valid.
 
